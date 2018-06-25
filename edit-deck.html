@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flashcards</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link rel="stylesheet" href="scripts/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body class="container-fluid">
+  <header class="row">
+    <h1>
+      <section>
+        <a href="index.html">Flashcards</a>
+      </section>
+    </h1>
+    <section class="dropdown">
+        <button class="btn btn-default dropdown-toggle col-sm-offset-1" type="button" data-toggle="dropdown"><i class="fas fa-align-justify"></i>
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="index.html"><i class="fas fa-angle-right"></i> Home</a></li>
+          <li><a href="edit-deck.html"><i class="fas fa-angle-right"></i> Your Decks</a></li>
+          <li><a href="#"><i class="fas fa-plus-circle"></i> Create New</a></li>
+        </ul>
+    </section>
+  </header>
+
+  <main class="row">
+    <h1 class="col-sm-4 col-sm-offset-5">Your Decks</h1>
+    <section id="decks">
+      <ul class="nav navbar" id="deck">
+        <!-- <section class='row' id="deck"> -->
+          <a class='btn btn-default' href="index.html">
+            <li>Deck 1   </li>
+          </a>
+        <!-- </section> -->
+        <!-- <section class='row' id="deck"> -->
+          <a class='btn btn-default' href="">
+            <li>Deck 2   </li>
+          </a>
+        <!-- </section> -->
+      </ul>
+      <small>
+        <section>
+          <form action="">
+            <label for="">New Deck Name</label>
+            <input type="text" id="newDeck" name="newDeck">
+          </form>
+        </section>
+        <button class="btn btn-default" id="createNew">
+          <i class="fas fa-plus"><a href="#"> Create New</a></i>
+        </button>
+      </small>
+    </section>
+  </main>
+  
+  <footer class="row">
+          <small class="col-sm-12 text-center">
+            Copyright &copy; 2018 Courtney Carr-Johnson, All Rights Reserved.
+          </small>
+  </footer>
+  <script src="index.js"></script>
+
+  </body>
+  </html>
+  
+
+  
