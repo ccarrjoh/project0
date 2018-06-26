@@ -39,8 +39,15 @@ mongoClient.connect('mongodb://localhost:27017', (err, client) => {
         console.log(data);
       });
     })
-  }
-})
+    app.get('/remove', (req, res2) => {
+      flashcard.deleteMany({}).then(() => {
+        console.log('deleted all entries')
+      });
+      flashcard.find({}).toArray().then((data2) => {
+        console.log(data2);
+      });
+    })
+  }})
 
 
 
