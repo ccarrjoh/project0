@@ -1,6 +1,9 @@
 body {
   color: black;
-  font-family: Jua, Arial, Helvetica, sans-serif
+  font-family: Jua, Arial, Helvetica, sans-serif;
+  background-image:url("images/background.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
 }
 
 header h1{
@@ -23,9 +26,11 @@ html{
 }
 
 main h1 {
-  font-size: 4rem;
-  margin-left: 44%;
+  font-size: 5rem;
+  margin-left: 33%;
   margin-right: 33%;
+  width: 50%;
+  text-align: center;
   /* border:2px solid black; */
 }
 
@@ -45,14 +50,16 @@ main h1+section{
 }
 #card{
   border: 2px solid black;
-  margin: 100px 30% 10px 30%;
+  margin: 100px 30% 10px 35%;
   height: 240px;
-  width: 40%;
+  width: 31%;
+  background-image: url("images/flashcard.png");
 }
 #cardText {
   font-size: 3rem;
-  margin-top: 20%;
+  margin-top: 18%;
   text-align: center;
+
 }
 
 #decks{
@@ -73,6 +80,6 @@ main h1+section{
 }
 
 #createNew {
-  border: 2px solid #B8DBD9;
+  margin-bottom: 10%;
 }
 

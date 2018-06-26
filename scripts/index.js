@@ -1,14 +1,16 @@
 // require('./scripts/express.js');
+// require('./mongo.js')
+
 
 function Card(front, back){
-  this.frontValue = front;
-  this.backValue = back;
+  this.frontVal = front;
+  this.backVal = back;
 
   this.display = function(side){
       if( side === 0 ){
-          return this.frontValue;
+          return this.frontVal;
       }else{
-          return this.backValue;
+          return this.backVal;
       }
   };
 }
@@ -66,7 +68,7 @@ cardHandle.cardButton.addEventListener('click', function() {
   cardHandle.cardTap();
 } );
 cardHandle.addButton.addEventListener('click', (evt) =>{
-  evt.preventDefault();
+  // evt.stopPropagation();
   userEnter();
 });
 cardHandle.deleteButton.addEventListener('click', (e3) => {
@@ -95,18 +97,3 @@ cardHandle.nextCard.addEventListener('click', (e2) =>{
   e2.preventDefault();
   cardHandle.cardMove(1);
 });
-
-// function newDeck(nameDeck) {
-//   this.name = nameDeck;
-
-// }
-
-// deckHandle = {
-//   decks: [],
-//   nDeck: document.querySelector("#newDeck"),
-//   createNewButton: document.querySelector("#createNew"),
-
-//   deckAdd: function(nameDeck) {
-
-//   }
-// }
